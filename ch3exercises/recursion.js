@@ -1,5 +1,5 @@
 let text1 = "The number ";
-let text2 = " is even: "
+let text2;
 let number = 0;
 let answerText = text1.concat(number, text2);
 
