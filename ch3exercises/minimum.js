@@ -1,4 +1,4 @@
-let intro = "The smaller number of the two you entered is ";
+
 
 function min(num1, num2){
     if (num1 < num2){
@@ -8,6 +8,11 @@ function min(num1, num2){
     };
 };
 
+function getMin(value1, value2){
+    console.log("The smaller number of the two you entered is " + min(value1, value2) + ".");
+};
+
 //Tests:
-console.log(intro + min(0, 10) + ".");
-console.log(intro + min(5, 15) + ".");
+getMin(0, 10);
+getMin(5, 15);
+getMin(100, 200);
