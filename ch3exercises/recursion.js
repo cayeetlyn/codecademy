@@ -26,28 +26,7 @@ function updateText(value) {
     console.log(answerText);
 }
 
+//Tests:
 updateText(10);
 updateText(47);
 updateText(-12);
-
-/*Tests:
-number = 10;
-   answerText = text1.concat(number, text2);
-  isEven(number);
-  console.log(answerText);
-answerText = text1.concat(number, text2);
-console.log(answerText + isEven(number));
-
-number = 47;
-    answerText = text1.concat(number, text2);
-    isEven(number);
-    console.log(answerText);
-answerText = text1.concat(number, text2);
- /  console.log(answerText + isEven(number));
-
-number = -12;
-    answerText = text1.concat(number, text2);
-    isEven(number);
-    console.log(answerText);
-answerText = text1.concat(number, text2);
-    console.log(answerText + isEven(number)); */
