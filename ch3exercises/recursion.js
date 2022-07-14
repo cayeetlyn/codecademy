@@ -3,6 +3,7 @@ let text2;
 let number = 0;
 let answerText = text1.concat(number, text2);
 
+//Function that returns 'true' if a number is even, and 'false' if it's odd
 
 function isEven(n) {
     if (n == 0) {
@@ -16,8 +17,9 @@ function isEven(n) {
     };
 };
 
+
 function updateText(value) {
-    if (isEven(value) === false){
+    if (isEven(value) === false) {
         text2 = " is odd."
     } else {
         text2 = " is even."
