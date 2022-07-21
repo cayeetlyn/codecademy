@@ -1,3 +1,4 @@
+//Counts the amount of a certain character in a string
 function countChar(string, char) {
   let count = 0;
   for (let i = 0; i < string.length; i++) {
@@ -5,9 +6,10 @@ function countChar(string, char) {
       count += 1;
     }
   };
-  return count;
+  return "There are " + count + " '" + char + "'s in \"" + string + "\"";
 };
 
+//Counts the amount of 'B's in a string
 function countBs(string) {
   return countChar(string, "B");
 };
@@ -15,3 +17,5 @@ function countBs(string) {
 //Tests:
 console.log(countBs("BBC"));
 console.log(countChar("kakkerlak", "k"));
+console.log(countChar("hello world", "l"));
+console.log(countChar("93284476", "4"));
