@@ -1,24 +1,28 @@
 /*  Builds the input into an array based on the starting and ending value
     Step is used to determine if the function should count up or down, or if any values should be skipped */
-function createRange(start, end, step = start < end ? 1 : -1) {
-  let array = [];
+const createRange = (start, end, step) => {
+  if (!step) {
+    step = start < end ? 1 : -1;
+  }
+
+  const results = [];
 
   //Counts up (start is lower than end)
   if (step > 0) {
     for (let i = start; i <= end; i += step) {
-      array.push(i);
+      results.push(i);
     }
-  //Counts down (start is higher than end)
+    //Counts down (start is higher than end)
   } else {
     for (let i = start; i >= end; i += step) {
-      array.push(i);
+      results.push(i);
     }
   }
-  return array;
+  return results;
 }
 
 //Adds each item in the array from createRange
-function getSum(array) {
+const sum = (array) => {
   let total = 0;
   for (let value of array) {
     total += value;
@@ -28,7 +32,8 @@ function getSum(array) {
 }
 
 //Tests:
-console.log(getSum(createRange(1, 20)))
-console.log(getSum(createRange(5, 2, -1)));
-console.log(getSum(createRange(1, 10)));
-console.log(getSum(createRange(1, 10, 2)));
+console.log(createRange(1, 10));
+console.log(createRange(1, 20));
+console.log(sum(createRange(5, 2, -1)));
+console.log(sum(createRange(1, 10)));
+console.log(createRange(1, 10, 2));
