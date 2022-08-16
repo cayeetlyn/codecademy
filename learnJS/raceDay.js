@@ -16,3 +16,4 @@ if (registeredEarly && runnerAge > 18){
 } else {
   console.log("Please visit the registration desk for more information.");
 }
+
