@@ -33,7 +33,7 @@ const logEvent = (name, event) => {
 };
 
 const logTime = (name, days) => {
-  console.log(`${name}'s time to train is: ${days} days`);
+  console.log(`${name}'s time to train is: ${days} days\n`);
 };
 
 const event = getRandEvent();
